@@ -24,6 +24,10 @@ ENV/
 .ruby-gemset
 .rvmrc
 
+# Build artifacts
+rbz_stage/
+_rbz_stage/
+
 # Sketchup specific
 *.rbz
 
