@@ -60,7 +60,7 @@ module SU_MCP
                 # Loop to handle TCP fragmentation; 'gets' alone could still block on partial JSON.
                 data = nil
                 buffer = String.new
-                deadline = Time.now + 0.5
+                deadline = Time.now + 0.05
                 while !buffer.include?("\n")
                   remaining = deadline - Time.now
                   break if remaining <= 0
